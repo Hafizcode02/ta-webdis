@@ -3,7 +3,7 @@ const preloader = document.querySelector(".preloader");
 const bodyLoaded = () => {
     setTimeout(() => {
         preloader.style.display = "none";
-    }, 2000);
+    }, 1500);
 };
 
 /* Scroll To The Top */
@@ -16,4 +16,21 @@ window.addEventListener("scroll", () => {
 scrollToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0 });
 });
+/* Scroll Reveal Js Animation */
+const scrollReveal = ScrollReveal({
+    origin: "top",
+    distance: "80px",
+    duration: 1500,
+    reset: true
+});
+scrollReveal.reveal(
+    `.starter,
+    .about,
+    .contagion,
+    .symptoms,
+    .solutions,
+    footer,
+    span
+    `
+);
 
