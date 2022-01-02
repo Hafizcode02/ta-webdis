@@ -326,6 +326,13 @@ nav .container .links ul li .button-nav {
 .solutions .virus3 img {
   height: 6rem;
 }
+.solutions .virus4 {
+  position: absolute;
+  top: 159rem;
+}
+.solutions .virus4 img {
+  height: 12rem;
+}
 .solutions .info {
   display: flex;
   align-items: center;
@@ -404,7 +411,8 @@ footer .social-links i:hover {
 
   .virus,
 .virus2,
-.virus3 {
+.virus3,
+.virus4 {
     display: none;
   }
 
@@ -543,7 +551,8 @@ footer .social-links i:hover {
 
   .virus,
 .virus2,
-.virus3 {
+.virus3,
+.virus4 {
     display: none;
   }
 
