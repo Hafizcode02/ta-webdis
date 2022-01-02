@@ -3,7 +3,7 @@ const preloader = document.querySelector(".preloader");
 const bodyLoaded = () => {
     setTimeout(() => {
         preloader.style.display = "none";
-    }, 1500);
+    }, 2000);
 };
 
 /* Scroll To The Top */
@@ -20,7 +20,7 @@ scrollToTop.addEventListener("click", () => {
 const scrollReveal = ScrollReveal({
     origin: "top",
     distance: "80px",
-    duration: 1500,
+    duration: 2500,
     reset: true
 });
 scrollReveal.reveal(
