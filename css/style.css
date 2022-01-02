@@ -375,6 +375,60 @@ nav .container .links ul li .button-nav {
 }
 
 /* end section solution */
+/* section content blog */
+.blog {
+  margin: 2rem 4rem;
+}
+.blog .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.blog .info .description {
+  width: 40%;
+  text-align: center;
+}
+.blog .content {
+  position: relative;
+}
+.blog .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+.blog .cards .card {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+  border-bottom: 0.2rem solid transparent;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.blog .cards .card .text {
+  padding: 2rem;
+}
+.blog .cards .card .text .title {
+  margin-bottom: 1rem;
+}
+.blog .cards .card .text .title a {
+  font-size: 1em;
+  margin: unset;
+}
+.blog .cards .card img {
+  max-height: 8rem;
+}
+.blog .cards .card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
+  border-bottom-color: #ef233c;
+}
+
+/* end section content blog */
 /* footer */
 footer {
   margin: 2.5rem 4rem;
@@ -517,6 +571,12 @@ footer {
   }
 
   /* end solutions responsive */
+  /* blog responsive */
+  .blog .cards {
+    flex-direction: column;
+  }
+
+  /* end blog responsive */
   /* footer responsive */
   footer {
     flex-direction: column;
@@ -657,6 +717,12 @@ footer {
   }
 
   /* end solutions responsive */
+  /* blog responsive */
+  .blog .cards {
+    flex-direction: column;
+  }
+
+  /* end blog responsive */
   /* footer responsive */
   footer {
     flex-direction: column;
