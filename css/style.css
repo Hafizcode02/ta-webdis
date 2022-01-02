@@ -396,7 +396,7 @@ footer .social-links i:hover {
 }
 
 /* end footer */
-/* responsive */
+/* responsive mobile*/
 @media (max-width: 480px) {
   body {
     font-size: 13px;
@@ -534,6 +534,145 @@ footer .social-links i:hover {
 
   /* end footer responsive */
 }
-/* end responsive */
+/* end responsive mobile*/
+/* responsive tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  .virus,
+.virus2,
+.virus3 {
+    display: none;
+  }
+
+  .info .description {
+    width: 90% !important;
+  }
+
+  /* nav responsive */
+  nav {
+    position: relative;
+    padding: 2rem;
+    margin: 0;
+  }
+  nav .responsive-toggle {
+    display: block !important;
+    position: absolute;
+    right: 5rem;
+  }
+  nav .responsive-toggle i {
+    font-size: 1.5rem;
+  }
+  nav .logo img {
+    height: 3rem;
+  }
+  nav .container .links {
+    position: absolute;
+    top: -40rem;
+    left: 0;
+    margin-top: 10rem;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    z-index: 99;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+    padding: 2rem 0;
+  }
+  nav .container .links ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  nav .container .links ul button {
+    padding: 1rem 2rem;
+  }
+  nav .container .links ul li .button-nav {
+    margin-left: unset;
+  }
+
+  /* end nav responsive */
+  /* starter responsive */
+  .starter {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .starter .info {
+    margin: 1rem;
+  }
+
+  /* end starter responsive */
+  /* about responsive */
+  .about {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .about img {
+    max-width: 100%;
+  }
+
+  /* end about responsive */
+  /* contagion responsive */
+  .contagion .cards {
+    flex-direction: column;
+  }
+
+  /* end contagion responsive */
+  /* symptoms responsive */
+  .symptoms img {
+    width: 100% !important;
+    object-fit: cover;
+    height: 375px;
+  }
+
+  /* end symptoms responsive */
+  /* solutions responsive */
+  .solutions .content {
+    margin: 1rem;
+  }
+  .solutions .content .solution {
+    gap: 1rem !important;
+    margin-bottom: 1rem;
+  }
+  .solutions .content .solution:nth-child(odd) {
+    flex-direction: column;
+  }
+  .solutions .content .solution:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .solutions .content .solution .solution-info {
+    gap: 0.5rem;
+  }
+  .solutions .content .solution .solution-info .round {
+    width: 9rem;
+    height: 3rem;
+    font-size: 22px;
+  }
+  .solutions .content .solution .solution-info .info-container .description {
+    text-align: justify;
+    max-width: 90% !important;
+  }
+  .solutions .content .solution img {
+    height: 20rem !important;
+  }
+
+  /* end solutions responsive */
+  /* footer responsive */
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer .social-links {
+    display: flex;
+  }
+
+  /* end footer responsive */
+}
+/* end responsive tablet */
 
 /*# sourceMappingURL=style.css.map */
