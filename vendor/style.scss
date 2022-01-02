@@ -390,21 +390,9 @@ nav {
 
 /* footer */
 footer {
-  margin: 2.8rem 4rem;
+  margin: 2.5rem 4rem;
   @include enableFlex();
   justify-content: space-between;
-  .social-links {
-    i {
-      cursor: pointer;
-      font-size: 1.4rem;
-      margin: 0 0.7rem;
-      color: $primaryColor;
-      transition: 0.3s ease-in-out;
-      &:hover {
-        color: $secondaryColor;
-      }
-    }
-  }
 }
 
 .copyright {
