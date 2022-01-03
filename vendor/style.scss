@@ -250,6 +250,77 @@ nav {
 }
 /* end section what is covid */
 
+/* section content stats */
+.stats {
+  margin: 2rem 4rem;
+  margin-bottom: 6rem;
+  .info {
+    @include enableFlex(true);
+    .description {
+      width: 40%;
+      text-align: center;
+    }
+  }
+  .content {
+    position: relative;
+  }
+  .cards {
+    @include enableFlex();
+    gap: 1.5rem;
+    margin-top: 1rem;
+    .card {
+      height: 25rem;
+      width: 20rem;
+      @include enableFlex(true);
+      .text {
+        padding: 2rem;
+        .title {
+          margin-bottom: 2rem;
+          color: #8f8b8b;
+          font-size: 1.5em;
+        }
+        .container-data {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          margin-top: 40px;
+          .confirmed-title {
+            font-size: 1em;
+            color: black;
+          }
+          .confirmed-1 {
+            font-size: 2em;
+            color: #6998ab;
+          }
+          .confirmed-2 {
+            font-size: 2em;
+            color: #f9d371;
+          }
+          .confirmed-3 {
+            font-size: 2em;
+            color: #248277;
+          }
+          .confirmed-4 {
+            font-size: 2em;
+            color: $secondaryColor;
+          }
+        }
+      }
+      transition: 0.2s ease-in-out;
+      border-bottom: 0.2rem solid transparent;
+      &:hover {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+          rgba(17, 17, 26, 0.1) 0px 4px 24px,
+          rgba(17, 17, 26, 0.05) 0px 8px 56px;
+        border-bottom-color: $secondaryColor;
+      }
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    }
+  }
+}
+/* end section content stats */
+
 /* section content contagion */
 .contagion {
   margin: 2rem 4rem;
@@ -413,7 +484,7 @@ nav {
         padding: 2rem;
         .title {
           margin-bottom: 1rem;
-          a{
+          a {
             font-size: 1em;
             margin: unset;
           }
@@ -534,6 +605,14 @@ footer {
     }
   }
   /* end about responsive */
+
+  /* statistics responsive */
+  .stats {
+    .cards {
+      flex-direction: column;
+    }
+  }
+  /* end statistics responsive */
 
   /* contagion responsive */
   .contagion {
@@ -703,6 +782,14 @@ footer {
     }
   }
   /* end contagion responsive */
+
+    /* statistics responsive */
+    .stats {
+      .cards {
+        flex-direction: column;
+      }
+    }
+    /* end statistics responsive */
 
   /* symptoms responsive */
   .symptoms {

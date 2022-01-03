@@ -224,6 +224,82 @@ nav .container .links ul li .button-nav {
 }
 
 /* end section what is covid */
+/* section content stats */
+.stats {
+  margin: 2rem 4rem;
+  margin-bottom: 6rem;
+}
+.stats .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.stats .info .description {
+  width: 40%;
+  text-align: center;
+}
+.stats .content {
+  position: relative;
+}
+.stats .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.stats .cards .card {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.2s ease-in-out;
+  border-bottom: 0.2rem solid transparent;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.stats .cards .card .text {
+  padding: 2rem;
+}
+.stats .cards .card .text .title {
+  margin-bottom: 2rem;
+  color: #8f8b8b;
+  font-size: 1.5em;
+}
+.stats .cards .card .text .container-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 40px;
+}
+.stats .cards .card .text .container-data .confirmed-title {
+  font-size: 1em;
+  color: black;
+}
+.stats .cards .card .text .container-data .confirmed-1 {
+  font-size: 2em;
+  color: #6998ab;
+}
+.stats .cards .card .text .container-data .confirmed-2 {
+  font-size: 2em;
+  color: #f9d371;
+}
+.stats .cards .card .text .container-data .confirmed-3 {
+  font-size: 2em;
+  color: #248277;
+}
+.stats .cards .card .text .container-data .confirmed-4 {
+  font-size: 2em;
+  color: #ef233c;
+}
+.stats .cards .card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
+  border-bottom-color: #ef233c;
+}
+
+/* end section content stats */
 /* section content contagion */
 .contagion {
   margin: 2rem 4rem;
@@ -526,6 +602,12 @@ footer {
   }
 
   /* end about responsive */
+  /* statistics responsive */
+  .stats .cards {
+    flex-direction: column;
+  }
+
+  /* end statistics responsive */
   /* contagion responsive */
   .contagion .cards {
     flex-direction: column;
@@ -678,6 +760,12 @@ footer {
   }
 
   /* end contagion responsive */
+  /* statistics responsive */
+  .stats .cards {
+    flex-direction: column;
+  }
+
+  /* end statistics responsive */
   /* symptoms responsive */
   .symptoms img {
     width: 100% !important;
