@@ -56,6 +56,7 @@ scrollReveal.reveal(
     .contagion,
     .symptoms,
     .solutions,
+    .blog,
     footer,
     span`
 );
