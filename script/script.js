@@ -53,6 +53,7 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(
     `.starter,
     .about,
+    .stats,
     .contagion,
     .symptoms,
     .solutions,
