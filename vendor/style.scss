@@ -308,14 +308,28 @@ nav {
       }
       transition: 0.2s ease-in-out;
       border-bottom: 0.2rem solid transparent;
-      &:hover {
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-          rgba(17, 17, 26, 0.1) 0px 4px 24px,
-          rgba(17, 17, 26, 0.05) 0px 8px 56px;
-        border-bottom-color: $secondaryColor;
-      }
       box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
         rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    }
+    .confirmed:hover {
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
+      border-bottom-color: #6998ab;
+    }
+    .treated:hover {
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
+      border-bottom-color: #f9d371;
+    }
+    .recover:hover {
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
+      border-bottom-color: #248277;
+    }
+    .die:hover {
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
+      border-bottom-color: $secondaryColor;
     }
   }
 }
@@ -783,13 +797,13 @@ footer {
   }
   /* end contagion responsive */
 
-    /* statistics responsive */
-    .stats {
-      .cards {
-        flex-direction: column;
-      }
+  /* statistics responsive */
+  .stats {
+    .cards {
+      flex-direction: column;
     }
-    /* end statistics responsive */
+  }
+  /* end statistics responsive */
 
   /* symptoms responsive */
   .symptoms {

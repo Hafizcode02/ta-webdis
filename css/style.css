@@ -294,7 +294,19 @@ nav .container .links ul li .button-nav {
   font-size: 2em;
   color: #ef233c;
 }
-.stats .cards .card:hover {
+.stats .cards .confirmed:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
+  border-bottom-color: #6998ab;
+}
+.stats .cards .treated:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
+  border-bottom-color: #f9d371;
+}
+.stats .cards .recover:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
+  border-bottom-color: #248277;
+}
+.stats .cards .die:hover {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 4px 24px, rgba(17, 17, 26, 0.05) 0px 8px 56px;
   border-bottom-color: #ef233c;
 }
