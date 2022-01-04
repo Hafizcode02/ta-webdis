@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/whatIsCovid.png">
 </head>
 
 <body onload="bodyLoaded()">
@@ -94,12 +95,12 @@
                     <div class="text">
                         <h3 class="title">Total confirmed</h3>
                         <div class="container-data">
-                            <h5 class="confirmed-title">Word</h3>
-                                <h3 class="confirmed-1">1.500.000</h3>
+                            <h5 class="confirmed-title">Word</h5>
+                            <h3 class="confirmed-1" id="confirmed-stats-word">281.808.270</h3>
                         </div>
                         <div class="container-data">
-                            <h5 class="confirmed-title">Indonesia</h3>
-                                <h3 class="confirmed-1">2.300.000</h3>
+                            <h5 class="confirmed-title">Indonesia</h5>
+                            <h3 class="confirmed-1" id="confirmed-stats-indonesia">2.300.000</h3>
                         </div>
                     </div>
                 </div>
@@ -107,12 +108,12 @@
                     <div class="text">
                         <h3 class="title">Being treated</h3>
                         <div class="container-data">
-                            <h5 class="confirmed-title">Word</h3>
-                                <h3 class="confirmed-2">720.000</h3>
+                            <h5 class="confirmed-title">Word</h5>
+                            <h3 class="confirmed-2" id="confirmed-treat-word">16.396.511</h3>
                         </div>
                         <div class="container-data">
-                            <h5 class="confirmed-title">Indonesia</h3>
-                                <h3 class="confirmed-2">90.000</h3>
+                            <h5 class="confirmed-title">Indonesia</h5>
+                            <h3 class="confirmed-2" id="confirmed-treat-indonesia">90.000</h3>
                         </div>
                     </div>
                 </div>
@@ -120,12 +121,12 @@
                     <div class="text">
                         <h3 class="title">Has recovered</h3>
                         <div class="container-data">
-                            <h5 class="confirmed-title">Word</h3>
-                                <h3 class="confirmed-3">520.000</h3>
+                            <h5 class="confirmed-title">Word</h5>
+                            <h3 class="confirmed-3" id="confirmed-recover-word">260.000.000</h3>
                         </div>
                         <div class="container-data">
-                            <h5 class="confirmed-title">Indonesia</h3>
-                                <h3 class="confirmed-3">100.000</h3>
+                            <h5 class="confirmed-title">Indonesia</h5>
+                            <h3 class="confirmed-3" id="confirmed-recover-indonesia">100.000</h3>
                         </div>
                     </div>
                 </div>
@@ -133,12 +134,12 @@
                     <div class="text">
                         <h3 class="title">Has died</h3>
                         <div class="container-data">
-                            <h5 class="confirmed-title">Word</h3>
-                                <h3 class="confirmed-4">320.000</h3>
+                            <h5 class="confirmed-title">Word</h5>
+                            <h3 class="confirmed-4" id="confirmed-die-word">5.411.759</h3>
                         </div>
                         <div class="container-data">
-                            <h5 class="confirmed-title">Indonesia</h3>
-                                <h3 class="confirmed-4">10.000</h3>
+                            <h5 class="confirmed-title">Indonesia</h5>
+                            <h3 class="confirmed-4" id="confirmed-die-indonesia">10.000</h3>
                         </div>
                     </div>
                 </div>
@@ -409,6 +410,7 @@
     <span class="copyright">2022 &copy; All right reserved by Hafiz Caniago</span>
     <!-- End Footer -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script/data.js"></script>
     <script src="script/script.js"></script>
 </body>
 
