@@ -25,5 +25,5 @@ function numberFormat(num) {
 var xhr = new XMLHttpRequest(); //invoke a new instance of the XMLHttpRequest
 xhr.onload = success; // call success function if request is successful
 xhr.onerror = error;  // call error function if request failed
-xhr.open('GET', 'https://cors-anywhere.herokuapp.com/https://data.covid19.go.id/public/api/update.json'); // open a GET request
+xhr.open('GET', 'https://peaceful-mesa-80065.herokuapp.com/https://data.covid19.go.id/public/api/update.json'); // open a GET request
 xhr.send(); // send the request to the server.
