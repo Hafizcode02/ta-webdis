@@ -1,6 +1,7 @@
 // function to handle success
 function success() {
     var db = JSON.parse(this.responseText); //parse the string to JSON
+    console.log("Get Data Success");
     var confirmedStatsIndonesia = document.getElementById("confirmed-stats-indonesia");
     confirmedStatsIndonesia.textContent = numberFormat(db.update.total.jumlah_positif);
     var confirmedTreatIndonesia = document.getElementById("confirmed-treat-indonesia");
